@@ -1,0 +1,72 @@
+<Doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <title>Formulario de registro</title>
+        </head>
+        <body>
+            <h1> Registro del usuario</h1>
+            <form action="/registro" method="post">
+ <fieldset>
+    <legend>Información personal</legend>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" requiered>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>"
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+    <label>Género:</label>
+    <input type="radio" id="masculino" name="genero" value="masculino" required>
+    <label for="masculino">Masculino</label>
+
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label>
+
+    <input type="radio" id="otro" name="genero" value="otro">
+    <label for="otro">Otro</label>
+</fieldset>
+<fieldset>
+    <legend>Información de contacto</legend>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Número de teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="direccion">Dirección:</label>
+    <textarea id="direccion" name="direccion" rows="4"></textarea>
+</fieldset>
+<fieldset>
+    <legend> Información de cuenta</legend>
+    <label for="usuario">Nombre de usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name=""contraseña" required>
+
+    <label for="confirmar contraseña">Confirmar contraseña:</label>
+    <input type="password" id="confirmar contraseña" name="confirmar contraseña" required>
+</fieldset>
+
+<fieldset>
+    
+    <legend>Preferencias</legend>
+    <label for="colorFavorito">Color favorito:</label>
+    <select name="colorFavorito" id="colorFavorito">
+    <option value="rojo">Rojo</option>
+    <option value="azul">Azul</option>
+    <option value="verde">Verde</option>
+    <option value="amarillo">Amarillo</option>
+    </select>
+
+    <br></br>
+    <input type="checkbox" id="terminos" name=""terminos" required>
+    <label for="terminos">Acepto los Términos y Condiciones</label>
+</fieldset>
+<input type="submit" value="Registrarse" class="submit-btn">
+</form>
+        </body>
+    </html>
