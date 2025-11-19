@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cta-container { /* Contenedor principal */
+            background-image: url('https://imagenes.elpais.com/resizer/v2/UTNBLPGKLFMIHMSOEHKTMMFU7A.jpg?auth=4625799d1b99c8e1e2c65079f6abbbb8a8ed6e2127f3835a74893c26e06a1910&width=1200');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 98vh;
+        }
+
+        .cta-text { /* Clase común para los textos */
+            font-size: 48px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            margin-bottom: 1px;
+        }
+
+        .cta-text+p { /* Párrafo debajo del título */
+            font-size: 28px;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+            margin-bottom: 30px;
+        }
+
+        .cta-button { /* Estilos del botón */
+            background-color: #57026c; 
+            color: white; 
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        nav { /* Estilos de la barra de navegación */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(70, 0, 100);
+            padding: 10px
+        }
+
+        nav img { /* Estilos del logo */
+            padding-left: 15px;
+        }
+
+        .nav-list { /* Estilos de la lista de navegación */
+            display: flex;
+            list-style-type: none;
+            gap: 2px;
+        }
+
+        .nav-list a { /* Estilos de los enlaces de navegación */
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            padding: 25px 15px;
+        }
+
+        .nav-list a:hover { /* Efecto hover en los enlaces */
+            color: rgb(27, 0, 122);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://logodetimes.com/times/real-madrid/logo-real-madrid-escudo-2048.png" alt="Logo real madrid"
+            width="60" height="60">
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="cta-container">
+        <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+        <p class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
+        <button class="cta-button">Descubrir Ofertas</button>
+    </div>
+</body>
+
+</html>
