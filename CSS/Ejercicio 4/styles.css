@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#gallery-section .gallery {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0 30px;
+    
+}
+
+#gallery-section .gallery-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    background-color:chocolate;
+}
+#gallery-section .gallery-list .gallery-item {
+    width: calc(100% / 3 - 32px);
+}
+
+#gallery-section .gallery-list .gallery-item .gallery-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
