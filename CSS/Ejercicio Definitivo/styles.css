@@ -1,0 +1,151 @@
+          nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        background-color: rgb(60, 56, 56);
+        padding: 10px
+
+        }
+        nav img{
+            padding-left: 15px;
+        }
+       .nav-list {
+        display: flex  ;
+        list-style-type: none;
+        gap: 2px;
+       }
+       .nav-list a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        padding: 25px 15px;
+       }
+       .nav-list a:hover{
+        color: #896700;
+       }
+       .cta-container {
+background-color: rgb(39, 37, 36);
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-cafe-realista-dibujos_157027-1112.jpg?semt=ais_hybrid&w=740&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+
+.cta-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cta-text + p {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #896700;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: uppercase; 
+  cursor: pointer;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#gallery-section .gallery {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0 30px;
+    background-color: rgb(39, 37, 36);
+    color: white;
+}
+
+#gallery-section .gallery-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    background-color: rgb(39, 37, 36);
+}
+#gallery-section .gallery-list .gallery-item {
+    width: calc(100% / 3 - 32px);
+}
+
+#gallery-section .gallery-list .gallery-item .gallery-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu-section .menu {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0 30px;
+    background-color:rgb(39, 37, 36);
+    color: white;
+}
+#menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(39, 37, 36);
+}
+#menu-section .menu-list .menu-item {
+    width: calc(100% / 3 - 32px);
+    color: white;
+    text-align: center;
+}
+#menu-section .menu-list .menu-item .menu-pic {
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+}
+#menu-section .menu-list .menu-item h2 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: rgb(60, 56, 56);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
