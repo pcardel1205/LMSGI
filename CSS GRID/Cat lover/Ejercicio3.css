@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:wght@300;400;500&display=swap');
+
+
+* {
+  --primary-blue: #074167;
+  --dark-blue: #143548;
+  --background-light: #ffecd9;
+  --hover-light: #c9ad94;
+  margin: 0;
+  color: var(--background-light);
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+header{
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+header .menu{
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+
+header .menu a{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+header .logo{
+    transition: transform 0.3s ease;
+}
+
+header input{
+    background-color: var(--background-light);
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    color: black;
+    transition: transform 0.25s ease;
+}
+
+header .lupa{
+    background-color: var(--dark-blue);
+    border: none;
+    transition: transform 0.25s ease; 
+}
+
+header .search{
+    display: flex;
+    gap: 8px; 
+}
+
+header button{
+    cursor: pointer;
+}
+
+.cta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    background-image: url("gato fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: sepia(25%);
+}
+
+.cta-container h1{
+    color: var(--primary-blue);
+    font-size: 58px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.footer-copy{
+    text-align: center;
+    background-color: var(--primary-blue);
+    padding: 14px;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    padding: 35px;
+}
+
+.footer-menu a{
+    text-decoration: none;
+}
+
+.footer-menu div{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+a:hover{
+    color: var(--hover-light);
+}
+
+.logo:hover{
+    transform: rotate(350deg);
+}
+
+input:hover{
+    transform: scale(1.08);
+}
+
+.lupa:hover{
+    transform: scale(1.25);
+    color: var(--hover-light);
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--dark-blue);
+}
+
+h1:hover{
+    transform: translate(6px, 3px);
+}
