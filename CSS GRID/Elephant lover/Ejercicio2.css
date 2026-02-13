@@ -5,10 +5,12 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial, sans-serif;
   color: #343a40;
 }
+
 
 /* NAV */
 nav {
@@ -19,6 +21,7 @@ nav {
   position: relative;
 }
 
+
 nav .logo {
   font-size: 1.6em;
   text-decoration: none;
@@ -26,11 +29,13 @@ nav .logo {
   margin-right: auto;
 }
 
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 10px;
 }
+
 
 nav ul li a{
   display: inline-block;
@@ -41,17 +46,20 @@ nav ul li a{
   border: 3px solid transparent;
 }
 
+
 /* Colores de bordes según posición */
 nav ul li:nth-child(1) a { border-bottom-color: #007bff; }
 nav ul li:nth-child(2) a { border-bottom-color: #32cd32; }
 nav ul li:nth-child(3) a { border-bottom-color: #8a2be2; }
 nav ul li:nth-child(4) a { border-bottom-color: #ffd747; }
 
+
 /* Hover */
 nav ul li a:hover {
   border-bottom: 3px solid #007bff;
   font-weight: bold;
 }
+
 
 /* CTA */
 .cta-container {
@@ -60,10 +68,12 @@ nav ul li a:hover {
   text-align: center;
 }
 
+
 .cta-container h1 {
   font-size: 2.2em;
   margin-bottom: 20px;
 }
+
 
 .cta-container p {
   max-width: 550px;
@@ -71,6 +81,7 @@ nav ul li a:hover {
   font-size: 1.2em;
   font-weight: bold;
 }
+
 
 /* SERVICES */
 .services-container {
@@ -82,15 +93,18 @@ nav ul li a:hover {
   gap: 20px;
 }
 
+
 .services-container > div {
   width: 30%;
   min-width: 250px;
   text-align: center;
 }
 
+
 .services-container .icon {
   font-size: 2em;
 }
+
 
 /* CONTACT */
 .contact-container {
@@ -99,12 +113,14 @@ nav ul li a:hover {
   text-align: center;
 }
 
+
 .contact-form {
   max-width: 500px;
   margin: auto;
   padding: 20px;
   text-align: left;
 }
+
 
 .contact-form input,
 .contact-form textarea {
@@ -116,20 +132,23 @@ nav ul li a:hover {
   border-bottom: 3px solid transparent;
 }
 
-.contact-form input[name="name"] { 
-    border-bottom-color: #32cd32; 
+
+.contact-form input[name="name"] {
+    border-bottom-color: #32cd32;
 }
 .contact-form input[name="email"] {
-  border-bottom-color: #8a2be2; 
+  border-bottom-color: #8a2be2;
 }
-.contact-form textarea { 
-    border-bottom-color: #ffd747; 
+.contact-form textarea {
+    border-bottom-color: #ffd747;
 }
+
 
 .contact-form input:hover,
 .contact-form textarea:hover {
   border-bottom-color: #007bff;
 }
+
 
 .contact-form button {
   background: #007bff;
@@ -139,9 +158,11 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+
 .contact-form button:hover {
   background: #343a40;
 }
+
 
 /* FOOTER */
 footer {
@@ -150,10 +171,12 @@ footer {
   text-align: center;
 }
 
+
 footer h3,
 footer small {
   font-weight: bold;
 }
+
 
 footer a {
   font-size: 2em;
