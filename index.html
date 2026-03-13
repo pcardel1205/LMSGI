@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        #cuadrado{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+        }
+        h1{
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1> hola</h1>
+
+    <div id="cuadrado"></div>
+    <h1>Buenas noches</h1>
+
+    <button onclick="cambiarcolor()">Cambiar Color</button>
+
+    <script>
+        function cambiarcolor(){
+            const cuadrado = document.getElementById("cuadrado");
+            cuadrado.style.backgroundColor = "grey";
+            cuadrado.style.width = "300px";
+            document.body.style.backgroundColor = "grey"
+            //cuadrado.style.display = "none";
+            const h1 = document.querySelector("h1");
+            h1.style.color = "white";
+        }
+    </script>
 </body>
 </html>
