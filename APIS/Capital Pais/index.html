@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "info">
+    <p id="nombre"></p>
+    <p id="capital"></p>
+    </div>
+
+    <script>
+        async function obtenerPais() {
+            const url = "https://restcountries.com/v3.1/name/colombia";
+            const response = await fetch(url);
+            const data = await response.json();
+
+            document.getElementById("nombre").textContent = "Nombre: " + data[0].name.common;
+            document.getElementById("capital").textContent = "Capital: " + data[0].capital[0];
+        }
+
+        obtenerPais();
+    </script>
+</body>
+</html>
