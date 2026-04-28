@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrusel de imágenes</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#carousel {
+    width: 600px;
+    height: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background: #000;
+}
+
+#carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+
+    <h2>Automatic Slideshow</h2>
+    <p>Cambia de imagen cada 2 segundos</p>
+
+    <div id="carousel">
+        <img id="slide" src="img1.jpg" alt="Imagen del carrusel">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
